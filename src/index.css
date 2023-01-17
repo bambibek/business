@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* NAVBAR */
+.navbar-nav li a {
+  font-size: 17px;
+}
+.navbar-brand {
+  letter-spacing: 3px;
+}
