@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Login from './buttons/Login';
 
 const Header = () => {
   return (
@@ -43,6 +44,7 @@ const Header = () => {
             <NavLink className="navbar-brand  fw-bold" to="/">
               D-STORE
             </NavLink>
+            <Login />
           </div>
         </div>
       </nav>
