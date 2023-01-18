@@ -44,13 +44,16 @@ const Login = () => {
               </button>
               <form>
                 <div className="mb-3">
-                  <label htmlFor="exampleInputEmail1" className="form-label">
+                  <label
+                    htmlFor="exampleInputEmailLogin"
+                    className="form-label"
+                  >
                     Email address
                   </label>
                   <input
                     type="email"
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="exampleInputEmailLogin"
                     aria-describedby="emailHelp"
                   />
                   <div id="emailHelp" className="form-text">
@@ -58,22 +61,28 @@ const Login = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="exampleInputPassword1" className="form-label">
+                  <label
+                    htmlFor="exampleInputPasswordLogin"
+                    className="form-label"
+                  >
                     Password
                   </label>
                   <input
                     type="password"
                     className="form-control"
-                    id="exampleInputPassword1"
+                    id="exampleInputPasswordLogin"
                   />
                 </div>
                 <div className="mb-3 form-check">
                   <input
                     type="checkbox"
                     className="form-check-input"
-                    id="exampleCheck1"
+                    id="exampleCheckLogin"
                   />
-                  <label className="form-check-label" htmlFor="exampleCheck1">
+                  <label
+                    className="form-check-label"
+                    htmlFor="exampleCheckLogin"
+                  >
                     Check me out
                   </label>
                 </div>

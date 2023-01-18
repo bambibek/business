@@ -12,10 +12,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Product />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/products" element={<Product />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
         {/* <Navigate to="/" /> */}
       </Routes>
       <Footer />
