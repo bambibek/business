@@ -8,15 +8,15 @@ const Login = () => {
         type="button"
         className="btn btn-outline-primary ms-auto"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target="#loginModal"
       >
-        Login
+        <span className="fa fa-sign-in me-1  "></span> Login
       </button>
 
       {/* <!-- Modal --> */}
       <div
         className="modal fade"
-        id="exampleModal"
+        id="loginModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -77,7 +77,10 @@ const Login = () => {
                     Check me out
                   </label>
                 </div>
-                <button type="submit" className="btn btn-outline-primary w-100">
+                <button
+                  type="submit"
+                  className="btn btn-outline-primary w-100 mt-5"
+                >
                   Submit
                 </button>
               </form>

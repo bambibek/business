@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import CartBtn from './buttons/CartBtn';
 import Login from './buttons/Login';
+import SignUp from './buttons/SignUp';
 
 const Header = () => {
   return (
@@ -45,6 +47,8 @@ const Header = () => {
               D-STORE
             </NavLink>
             <Login />
+            <SignUp />
+            <CartBtn />
           </div>
         </div>
       </nav>
