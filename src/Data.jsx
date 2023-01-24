@@ -9,7 +9,7 @@ const DATA = [
   {
     id: 1,
     title: 'Dr.Martin oldschool',
-    price: 250,
+    price: 230,
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet quasi impedit ipsam minima nisi dolor commodi harum repudiandae. Non commodi omnis veniam similique dolor expedita placeat soluta quisquam eius! ',
     img: '/assets/images/products/shoe2.jpg',
   },

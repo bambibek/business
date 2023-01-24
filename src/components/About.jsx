@@ -26,7 +26,7 @@ const About = () => {
               Contact Us
             </NavLink>
           </div>
-          <div className="col-md-6 d-flex justify-content-center ">
+          <div className="col-md-6 d-flex justify-content-center mx-auto my-auto ">
             <img
               src="/assets/images/aboutUs.png"
               alt="About Us"

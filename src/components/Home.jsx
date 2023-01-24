@@ -1,8 +1,9 @@
 import React from 'react';
+import Product from './Product';
 
 const Home = () => {
   return (
-    <>
+    <div>
       <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
           <button
@@ -91,7 +92,8 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </>
+      <Product />
+    </div>
   );
 };
 
