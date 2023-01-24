@@ -27,10 +27,15 @@ const ProductDetail = () => {
             <button
               onClick={() => {
                 handleCart(product);
+                if (cartBtn === 'Add to Cart') {
+                  setCartBtn('Remove from Cart');
+                } else {
+                  setCartBtn('Add to Cart');
+                }
               }}
               className="btn btn-outline-primary my-5"
             >
-              Add to cart
+              {cartBtn}
             </button>
           </div>
         </div>
