@@ -14,4 +14,4 @@ const addItems = (state = addItem, action) => {
       return state;
   }
 };
-export default addItem;
+export default addItems;

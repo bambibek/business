@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import DATA from '../Data';
+import { useDispatch } from 'react-redux';
+import { addItem, delItem } from '../redux/actions/index';
 
 const ProductDetail = () => {
   const [cartBtn, setCartBtn] = useState('Add to Cart');
@@ -10,8 +12,17 @@ const ProductDetail = () => {
 
   const product = proDetail[0];
   //   console.log(product);
+  const dispatch = useDispatch();
 
-  const handleCart = (product) => {};
+  const handleCart = (product) => {
+    if (cartBtn === 'Add to Cart') {
+      dispatch(addItem(product));
+      setCartBtn('Remove from Cart');
+    } else {
+      dispatch(delItem(product));
+      setCartBtn('Add to Cart');
+    }
+  };
   return (
     <>
       <div className="container my-5 py-3">
@@ -27,11 +38,6 @@ const ProductDetail = () => {
             <button
               onClick={() => {
                 handleCart(product);
-                if (cartBtn === 'Add to Cart') {
-                  setCartBtn('Remove from Cart');
-                } else {
-                  setCartBtn('Add to Cart');
-                }
               }}
               className="btn btn-outline-primary my-5"
             >
